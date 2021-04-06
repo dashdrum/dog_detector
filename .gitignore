@@ -2,3 +2,5 @@ dogenv
 **/.DS_Store
 *.pyc
 src/data
+src/models/yolov3.weights
+
