@@ -5,7 +5,7 @@ import cv2
 import os
 from progress.bar import Bar
 from imutils.video import VideoStream, FPS
-
+from datetime import datetime
 
 class Classifier():
     """Class for running the classification app"""
@@ -67,7 +67,7 @@ class Classifier():
             exit(1)
         self.initialize_live_video_stream()
         while True:
-            print("Running frame")
+            print("Running frame",datetime.now())
             self.box_list = []
             self.confidence_list = []
             self.class_id_list = []
